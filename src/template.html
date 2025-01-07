@@ -1,12 +1,34 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dropdown Menu</title>
-  </head>
 
-  <body>
-    <h1>Dropdown Menu</h1>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dropdown Menu</title>
+</head>
+
+<body>
+  <h1>Dropdown Menu</h1>
+  <div class="wrapper">
+    <div class="navbar">
+      <div class="dropdown">
+        <div class="dropdown-button" id="dropdown-button">
+          <!-- Hamburger menu icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <title>menu</title>
+            <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+          </svg>
+        </div>
+        <ul id="dropdown-menu" class="dropdown-menu">
+          <li class="menu-item">Item 1</li>
+          <li class="menu-item">Item 2</li>
+          <li class="menu-item">Item 3</li>
+          <li class="menu-item">Item 4</li>
+          <li class="menu-item">Item 5</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
