@@ -7,7 +7,6 @@ function Dropdown() {
 
     function showDropdown() {
       dropdownMenu.classList.toggle('dropdown-shown');
-      dropdownMenu.classList.toggle('dropdown-hidden');
     }
   }
 
@@ -20,7 +19,6 @@ function Dropdown() {
 
     function showDropdown() {
       dropdownMenu.classList.add('dropdown-shown');
-      dropdownMenu.classList.remove('dropdown-hidden');
       clearTimeout(hideTimeout); // Stops the timer if the mouse re-enters
     }
 
@@ -30,7 +28,6 @@ function Dropdown() {
     }
 
     function hideDropdown() {
-      dropdownMenu.classList.add('dropdown-hidden');
       dropdownMenu.classList.remove('dropdown-shown');
     }
   }
