@@ -1,1 +1,78 @@
 @import 'modern-normalize';
+
+:root {
+  --primary: #fdb417;
+  --text-color: #2e2104;
+  --alt-color-1: #f6dca4;
+  --alt-color-2: #fbeed2;
+  --bg-color: #f8f8f6;
+}
+
+body {
+  padding: 1rem;
+  min-height: 100svh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper {
+  flex: 1;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.navbar {
+  background: var(--primary);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.navbar h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-button svg {
+  display: block;
+  width: 40px;
+  fill: var(--text-color);
+}
+
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: -0.5rem;
+  width: 100px;
+
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.menu-item {
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.menu-item:nth-child(odd) {
+  background: var(--alt-color-1);
+}
+
+.menu-item:nth-child(even) {
+  background: var(--alt-color-2);
+}
