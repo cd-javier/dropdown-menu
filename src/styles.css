@@ -81,10 +81,25 @@ body {
   background: var(--alt-color-2);
 }
 
-.dropdown-hidden {
+.menu-item:hover {
+  background-color: var(--primary);
+}
+
+.dropdown-menu {
+  opacity: 0;
   visibility: hidden;
+  transform: translateY(-10px);
+  transition:
+    opacity 0.3s ease,
+    visibility 0s linear 0.3s,
+    transform 0.3s ease;
 }
 
 .dropdown-shown {
+  opacity: 1;
   visibility: visible;
+  transform: translateY(0);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
 }
